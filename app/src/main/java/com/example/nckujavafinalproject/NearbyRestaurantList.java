@@ -199,8 +199,10 @@ public class NearbyRestaurantList extends AppCompatActivity {
                             rating_total = String.valueOf(rating_total_);
                             rating_total=String.format("%.3sk",rating_total);
                         }
-                        else{ rating_total = String.valueOf(rating_total_);
-                            rating_total=String.format("%.3s",rating_total);
+                        else{
+                            int temp = (int)rating_total_;
+                            rating_total = String.valueOf(temp);
+                            rating_total=String.format("%4.3s",rating_total);
                         }
                         JSONObject geometry = obj.getJSONObject("geometry");
                         JSONObject location = geometry.getJSONObject("location");
