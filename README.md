@@ -7,6 +7,7 @@
 ## 其他資訊
 
 - Java 檔案在 app\src\main\java\com\example\nckujavafinalproject 資料夾中
+- 不要clone在有non-ascii字元(如中文)的資料夾中，會無法進行gradle build
 
 ## 使用方法
 
